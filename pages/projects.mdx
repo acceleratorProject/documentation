@@ -28,4 +28,25 @@ export const Counter = () => {
 
 import Counters from '../components/counters'
 
+Este es un ejemplo de un componente contador
+
+```js filename="counter.jsx" copy
+function MyButton() {
+  const [count, setCount] = useState(0)
+
+  function handleClick() {
+    setCount(count + 1)
+  }
+
+  return (
+    <div>
+      <button onClick={handleClick} className={styles.counter}>
+        Clicked {count} times
+      </button>
+    </div>
+  )
+}
+```
+
+
 <Counters />

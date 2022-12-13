@@ -1,0 +1,63 @@
+Introducción
+
+---
+
+Los Custom Hooks son funciones propias, es decir, creadas por ti en tu código, para abstraer y encapsular comportamientos que se relacionen con otros hooks propios de React, como el uso de estados a través de `useState` o “sideeffects” a través de `useEffect`. **Construir tus propios Hooks te permite extraer la lógica del componente en funciones reutilizables**.
+
+Antes de sumergirnos en crear nuestro primer Custom Hook el equipo detrás de React nos lanza algunas recomendaciones que tenemos que tener en cuenta.
+
+- Nombrar todos nuestros Custom Hook con la palabra “use” al principio del nombre, no es obligatorio pero por convención se suele hacer. Por ejemplo `useMyCustomHook`.
+
+- Dos componentes que usan un mismo Custom Hook no comparten estado, cada vez que usas un Hook personalizado, todo estado y efecto dentro de este son aislados completamente en el componente que lo utiliza.
+
+- Reutiliza y piensa en la creatividad. Los Custom Hook ofrecen la flexibilidad de compartir lógica que no era posible antes con los componentes de React. Puedes escribir Hooks personalizados que cubran una amplia gama de casos de uso, como manejo de formularios, animación, suscripciones declarativas, temporizadores y probablemente muchos más que no hemos considerado.
+
+**Custom Hook counter**
+
+---
+
+Vamos a realizar un ejemplo básico de un contador para explicar las particularidades de los Custom Hooks y luego entraremos en algunos ejemplos más complejos y con cierta utilidad en nuestro día a día.
+
+Os presentamos un Custom Hook contador que tiene la posibilidad de hacer crecer o decrecer una cuenta.
+
+```jsx
+import { useState } from "react";
+
+const useCounter = (intialeCount) => {
+  const [count, setCount] = useState(intialeCount);
+
+  const handleIncrement = () => {
+    setCount((prevCount) => prevCount + 1);
+  };
+
+  const handleDecrement = () => {
+    setCount((prevCount) => Math.max(0, prevCount - 1));
+  };
+
+  return { count, handleIncrement, handleDecrement };
+};
+
+export { useCounter };
+```
+
+Si os fijáis por un lado generamos un state, count, que guarda el valor del contador y por otro lado definimos las acciones que podemos lanzar `handleIncrement` o `handleDecrement` . Es buena práctica usar la palabra handle (manejador o controlador) para estas acciones.
+
+Ahora podemos usar nuestro `Custom Hook` en todos los componente que queramos.
+
+```jsx
+import { useCounter } from "./hooks/useCounter";
+
+export default function App() {
+  const { count, handleIncrement, handleDecrement } = useCounter(0);
+
+  return (
+    <>
+      <h1>{count}</h1>
+      <button onClick={handleIncrement}>Incrementar</button>
+      <button onClick={handleDecrement}>Decrementar</button>
+    </>
+  );
+}
+```
+
+Wow 🦄! Ahora ya nos sabemos la teoría y hemos visto un ejemplo sencillito para calentar, pero esto acaba de comenzar.
