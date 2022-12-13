@@ -1,11 +1,13 @@
 {
   "index": "Introduction",
-  "projects": "Projects",
+  "acceleratorjs": "acceleratorjs",
   "templates": "Templates",
+  "components": "components",
   "guias": "Guías",
+  "docu": "Docu",
+  "posts": "Posts",
   "about": {
     "title": "About",
     "type": "page"
   }
-
 }
