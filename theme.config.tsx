@@ -3,7 +3,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 import Image from 'next/image'
 
 const config: DocsThemeConfig = {
-  logo: <Image src={"/thunder.png"} alt="thunder" width="50" height="50"/>,
+  logo: <Image src={"/accelerator.png"} alt="thunder" width="50" height="50"/>,
   project: {
     link: 'https://github.com/acceleratorProject',
   },

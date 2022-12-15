@@ -1,13 +1,45 @@
 {
-  "index": "Introduction",
-  "acceleratorjs": "acceleratorjs",
-  "templates": "Templates",
-  "components": "components",
-  "guias": "Guías",
-  "docu": "Docu",
-  "posts": "Posts",
+  "index":{
+    "title": "Welcome 👋🏼",
+    "theme": {
+      "toc": false,
+      "footer": false
+    }
+  },
+  "acceleratorjs":{
+    "title": "acceleratorjs ⚡️",
+    "theme": {
+      "toc": false,
+      "footer": false
+    }
+  },
+  "Templates":{
+    "title": "Templates 📁",
+    "theme": {
+      "toc": false,
+      "footer": false
+    }
+  },
+  "Guias":{
+    "title": "Guías 🧪",
+    "theme": {
+      "toc": false,
+      "footer": false
+    }
+  },
+  "Off-topics":{
+    "title": "Off Topics 🛠",
+    "theme": {
+      "toc": false,
+      "footer": false
+    }
+  },
   "about": {
-    "title": "About",
-    "type": "page"
+    "title": "About 🧙🏽‍♂️ | 😁 | 🖤 | 🪐",
+    "type": "page",
+    "theme": {
+      "toc": false,
+      "footer": false
+    }
   }
 }
