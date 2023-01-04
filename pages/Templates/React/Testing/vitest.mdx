@@ -1,0 +1,50 @@
+# Qué es Vitest
+
+**[Vitest](https://vitest.dev/) ,** es un un test runner el cuál nos permitirá ejecutar nuestros tests de una manera muy rápida. Los test runner son frameworks los cuáles nos permiten escribir tests con JavaScript y ejecutarlos.
+
+Como ya sabes en React se trabaja con componentes, para realizar tests sobre ellos necesitaremos de  una librería  llamada **[React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)** la cuál cuenta con funciones de react-dom y react-dom/test-utils, esta librería nos facilitara mucho las cosas en la tarea de realizar pruebas en nuestros componentes. 
+
+Por ultimo necesitamos de **[jsdom](https://github.com/jsdom/jsdom#readme)** este nos permitirá poder simular un navegador. Esta es una librería muy ligera la cuál permitirá tener un navegador en el que se rendericen nuestros componentes al realizar testing.
+
+
+## Por qué usar Vitest & RTL
+
+- Vitest
+    - describe  → Función la cuál nos permite asignar un nombre a un conjunto de tests y agruparlos.
+    - test / it→  Función con la cuál crearemos nuestro test y definiremos su nombre.
+    - expect→  Función a la cuál le pasamos un valor y esperamos que tenga unas propiedades o valores determinados.
+
+- React Testing Library
+    - render → Función la cuál va a renderizar el contenido en nuestros tests.
+    - screen → Objeto el cuál nos permite interactuar y visualizar el contenido renderizado. Este cuenta con métodos como **getByText** el cuál nos permite seleccionar un elemento por su texto.
+    - userEvent → Objeto el cuál nos proporciona distintos métodos para disparar eventos en nuestras pruebas, por ejemplo un click.
+
+
+## Accelerator Vitest Templates
+
+* [Styled Components + Vitest](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Styled Components + Vitest + Cypress](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Styled Components - Theme + Vitest](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Styled Components - Theme + Vitest + Cypress](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Styled Components - Theme - Code + Vitest](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Styled Components - Theme - Code + Cypress](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Styled Components - Theme - Code + Vitest + Cypress](https://github.com/acceleratorProject/templates-react/tree/main/js).
+
+* [Emotion + Vitest](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Emotion + Vitest + Cypress](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Emotion - Theme + Vitest](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Emotion - Theme + Vitest + Cypress](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Emotion - Theme - Code + Vitest](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Emotion - Theme - Code + Cypress](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Emotion - Theme - Code + Vitest + Cypress](https://github.com/acceleratorProject/templates-react/tree/main/js).
+
+* [Chakra UI + Vitest](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Chakra UI + Vitest + Cypress](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Chakra UI - Theme + Vitest](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Chakra UI - Theme + Vitest + Cypress](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Chakra UI - Theme - Code + Vitest](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Chakra UI - Theme - Code + Cypress](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Chakra UI - Theme - Code + Vitest + Cypress](https://github.com/acceleratorProject/templates-react/tree/main/js).
+
+* [Tailwind + Vitest](https://github.com/acceleratorProject/templates-react/tree/main/js).
+* [Tailwind + Vitest + Cypress](https://github.com/acceleratorProject/templates-react/tree/main/js).

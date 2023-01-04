@@ -1,13 +1,6 @@
 {
   "index":{
-    "title": "Welcome 👋🏼",
-    "theme": {
-      "toc": false,
-      "footer": false
-    }
-  },
-  "acceleratorjs":{
-    "title": "acceleratorjs ⚡️",
+    "title": "Welcome 👋🏼 ⚡️",
     "theme": {
       "toc": false,
       "footer": false
@@ -20,22 +13,15 @@
       "footer": false
     }
   },
-  "Guias":{
-    "title": "Guías 🧪",
-    "theme": {
-      "toc": false,
-      "footer": false
-    }
-  },
-  "Off-topics":{
-    "title": "Off Topics 🛠",
+  "Guides":{
+    "title": "Micro Guides 🧪",
     "theme": {
       "toc": false,
       "footer": false
     }
   },
   "about": {
-    "title": "About 🧙🏽‍♂️ | 😁 | 🖤 | 🪐",
+    "title": "About 🧙🏽‍♂️ | 🖤 ",
     "type": "page",
     "theme": {
       "toc": false,
