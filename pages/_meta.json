@@ -1,19 +1,19 @@
 {
-  "index":{
+  "index": {
     "title": "Welcome 👋🏼 ⚡️",
     "theme": {
       "toc": false,
       "footer": false
     }
   },
-  "Templates":{
+  "Templates": {
     "title": "Templates 📁",
     "theme": {
       "toc": false,
       "footer": false
     }
   },
-  "Guides":{
+  "Guides": {
     "title": "Micro Guides 🧪",
     "theme": {
       "toc": false,
@@ -21,7 +21,7 @@
     }
   },
   "about": {
-    "title": "About 🧙🏽‍♂️ | 🖤 ",
+    "title": "About 🧙🏽‍♂️ | 👽 ",
     "type": "page",
     "theme": {
       "toc": false,
